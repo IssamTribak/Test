@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnet.a  CMakeFiles/net.dir/fileman.cpp.o CMakeFiles/net.dir/gclient.cpp.o CMakeFiles/net.dir/gserver.cpp.o CMakeFiles/net.dir/sock.cpp.o CMakeFiles/net.dir/tcpip.cpp.o
+/usr/bin/ranlib libnet.a

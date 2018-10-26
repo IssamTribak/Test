@@ -10,17 +10,13 @@
 
 #include <stdlib.h>
 #include <fcntl.h>
-#if defined HAVE_SYS_IOCTL_H
 #   include <sys/ioctl.h>
 #   include <sys/stat.h>
 #   include <sys/types.h>
 #include <signal.h>
-#endif
 #include <sys/types.h>
 
-#if defined __APPLE__ && !defined __MACH__
-#   include "GUSI.h"
-#elif defined HAVE_NETINET_IN_H
+
 #   include <netdb.h>
 #   include <netinet/in.h>
 #   include <stdio.h>
@@ -30,12 +26,12 @@
 #   include <sys/shm.h>
 #   include <sys/socket.h>
 #   include <unistd.h>
-#   ifdef HAVE_BSTRING_H
-#       include <bstring.h>
-#   else
+
+
+
 #       include <sys/select.h>
-#   endif
-#endif
+
+
 
 #include "sock.h"
 #include "isllist.h"
@@ -242,4 +238,3 @@ class udp_socket : public unix_fd
   }
 
 } ;
-

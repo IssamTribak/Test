@@ -101,7 +101,7 @@ void createRCFile( char *rcfile )
         fputs( "; Use DoubleBuffering\ndoublebuf=0\n\n", fd );
         fputs( "; Use OpenGL\ngl=0\n\n", fd );
         fputs( "; Location of the datafiles\ndatadir=", fd );
-        fputs( ASSETDIR "\n\n", fd );
+        //fputs( ASSETDIR "\n\n", fd );
         #endif
         fputs( "; Use mono audio only\nmono=0\n\n", fd );
         fputs( "; Grab the mouse to the window\ngrabmouse=0\n\n", fd );
@@ -373,7 +373,7 @@ void setup( int argc, char **argv )
     scale                    = 2;            // Default scale amount
 
     // Display our name and version
-    printf( "%s %s\n", PACKAGE_NAME, PACKAGE_VERSION );
+    //printf( "%s %s\n", PACKAGE_NAME, PACKAGE_VERSION );
 
     // Initialize SDL with video and audio support
     if( SDL_Init( SDL_INIT_VIDEO | SDL_INIT_AUDIO ) < 0 )
@@ -429,7 +429,7 @@ void setup( int argc, char **argv )
     else
         set_filename_prefix( (const char*)buffer );
     #else
-    set_filename_prefix( ASSETDIR );
+    //set_filename_prefix( ASSETDIR );
     #endif
 
     // Load the users configuration

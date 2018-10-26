@@ -2247,7 +2247,7 @@ void game_getter(char *st, int max)
 
 void show_startup()
 {
-    dprintf("Abuse version %s\n", PACKAGE_VERSION);
+ //   dprintf("Abuse version %s\n", PACKAGE_VERSION);
 }
 
 char *get_line(int open_braces)

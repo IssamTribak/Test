@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblisp.a  CMakeFiles/lisp.dir/lisp.cpp.o CMakeFiles/lisp.dir/lisp_gc.cpp.o CMakeFiles/lisp.dir/lisp_opt.cpp.o CMakeFiles/lisp.dir/trig.cpp.o
+/usr/bin/ranlib liblisp.a

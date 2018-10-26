@@ -8,6 +8,11 @@
  *  Jonathan Clark, or by Sam Hocevar.
  */
 
+
+
+
+
+
 #if defined HAVE_CONFIG_H
 #   include "config.h"
 #endif
@@ -141,6 +146,7 @@ net_address *tcpip_protocol::get_local_address()
 
   char tmp[4];
   char const *np;
+  
   sockaddr_in host;
 
   np = my_name;
